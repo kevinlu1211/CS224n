@@ -1,0 +1,48 @@
+2017-05-20 10:12:24,097:INFO: Building model...
+2017-05-20 10:12:36,119:INFO: took 12.02 seconds
+2017-05-20 10:12:40,902:INFO: Epoch 1 out of 10
+2017-05-20 10:14:05,738:INFO: Evaluating on development data
+2017-05-20 10:14:44,008:DEBUG: Token-level confusion matrix:
+go\gu   	PER     	ORG     	LOC     	MISC    	O       
+PER     	2938.00 	51.00   	40.00   	16.00   	104.00  
+ORG     	374.00  	1103.00 	244.00  	158.00  	213.00  
+LOC     	130.00  	189.00  	1582.00 	97.00   	96.00   
+MISC    	94.00   	137.00  	96.00   	818.00  	123.00  
+O       	121.00  	109.00  	27.00   	52.00   	42450.00
+
+2017-05-20 10:14:44,008:DEBUG: Token-level scores:
+label	acc  	prec 	rec  	f1   
+PER  	0.98 	0.80 	0.93 	0.86 
+ORG  	0.97 	0.69 	0.53 	0.60 
+LOC  	0.98 	0.80 	0.76 	0.77 
+MISC 	0.98 	0.72 	0.65 	0.68 
+O    	0.98 	0.99 	0.99 	0.99 
+micro	0.98 	0.95 	0.95 	0.95 
+macro	0.98 	0.80 	0.77 	0.78 
+not-O	0.98 	0.77 	0.75 	0.76 
+
+2017-05-20 10:14:44,008:INFO: Entity level P/R/F1: 0.66/0.71/0.68
+2017-05-20 10:14:44,009:INFO: New best score! Saving model in results/rnn/20170520_101220/model.weights
+2017-05-20 10:14:51,726:INFO: Epoch 2 out of 10
+2017-05-20 10:16:19,923:INFO: Evaluating on development data
+2017-05-20 10:17:00,338:DEBUG: Token-level confusion matrix:
+go\gu   	PER     	ORG     	LOC     	MISC    	O       
+PER     	2883.00 	63.00   	62.00   	17.00   	124.00  
+ORG     	162.00  	1506.00 	151.00  	69.00   	204.00  
+LOC     	45.00   	179.00  	1760.00 	31.00   	79.00   
+MISC    	48.00   	143.00  	53.00   	899.00  	125.00  
+O       	51.00   	76.00   	23.00   	31.00   	42578.00
+
+2017-05-20 10:17:00,340:DEBUG: Token-level scores:
+label	acc  	prec 	rec  	f1   
+PER  	0.99 	0.90 	0.92 	0.91 
+ORG  	0.98 	0.77 	0.72 	0.74 
+LOC  	0.99 	0.86 	0.84 	0.85 
+MISC 	0.99 	0.86 	0.71 	0.78 
+O    	0.99 	0.99 	1.00 	0.99 
+micro	0.99 	0.97 	0.97 	0.97 
+macro	0.99 	0.87 	0.84 	0.85 
+not-O	0.99 	0.85 	0.82 	0.84 
+
+2017-05-20 10:17:00,340:INFO: Entity level P/R/F1: 0.77/0.79/0.78
+2017-05-20 10:17:00,340:INFO: New best score! Saving model in results/rnn/20170520_101220/model.weights
